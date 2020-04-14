@@ -133,39 +133,7 @@ body, html{
   
   }
   
-  .column1{
-   margin: 0 auto;
-    padding-top: 30px;
- 
-  }
-  .column2{
- margin: 0 auto;
-    padding-top: 30px;
-  }
-  .column3{
-      margin: 0 auto;
-      padding-top: 30px;
 
-    }
- .column4{
-     margin: 0 auto;
- }
-
-form{
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.column5{
-    padding-top: 10px;
-    margin: 0 auto;
-  
-}
-.column6{
-    padding-top: 10px;
-    margin:0 auto;
-}
   /*scroll down button*/
   #button-scroll{
     display: inline-block;
@@ -203,4 +171,37 @@ form{
   #button-scroll.show {
     opacity: 1;
     visibility: visible;
+  }
+  .tweet1{
+      padding-top: 5px;
+      padding-right: 20px;
+      padding-left:20px;
+  }
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    padding-top: 80px;
+   
+  }
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .team-members{
+      padding-top: 80px;
   }

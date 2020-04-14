@@ -3,76 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASK 2 API</title>
+    <title>Task 2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+   
+            
 </head>
 <body>
-      <!--preloader-->
-      <div id="loader-wrapper">
+    <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
       </div>
-    <!--navbar-->
-    <nav class=" navbar navbar-expand-sm bg-primary navbar-dark ">
-        <!-- Brand/logo -->
-  <h2 class="navbar-title">MY PAGE</h2>
+    <div class="navbar-head">
+        <nav  class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <!-- Brand -->
+            <h1 class="navbar-brand" style="color: lightskyblue;">MyPage</h1>
+          
+            
+          
+            <!-- Navbar links -->
+           
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id="login_buttons">
+                  <button class="btn btn-primary">Sign In</button>
+                  <button class="btn btn-outline-primary">Sign Up</button>
+             </li>
+             
+              </ul>
+            
+          </nav> 
+    </div>
    
-      </nav>
-      <div class="row">
-<div class="column1">
-    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/TwitterDev/likes?ref_src=twsrc%5Etfw">Tweets Liked by @TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</div>   
-<div class="column2">
-    <a class="twitter-timeline" data-width="600" data-height="350" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</div>
+    <!--pricing table-->
+    <div class="pricing">
+        
+        <div class="columns">
+            <a class="twitter-timeline" data-width="250" data-height="700" href="https://twitter.com/TwitterDev/likes?ref_src=twsrc%5Etfw">Tweets Liked by @TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          </div>
+          
+          </div>
+          <div class="columns">
+            <a class="twitter-timeline" data-width="450" data-height="350" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            <blockquote class="twitter-tweet" data-width="450"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+       
+  
+  
+    <div class="team-members">
 
-<div class="column3">
-    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</div>
-      </div>
-     <!--row 2-->
-      <div class="row2">
-        <script>
-function topFunction(){
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  } 
-        </script>
-        <a class="" id="button-scroll" onclick="topFunction()" >Go Back?</a>
-          <div class="column4">
-            <form action="/action_page.php">
-                <div class="form-group">
-                  <label for="email">Email address:</label>
-                  <input type="email" class="form-control" placeholder="Enter email" id="email">
+            <div class="column">
+              <div class="card">
+              
+                <div class="container">
+                  <form>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <button style="margin-bottom: 20px;" type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <label for="pwd">Message:</label>
-                  <input type="text" class="form-control" placeholder="Enter Message" id="text">
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                
+                <div class="container">
+                    <div class="form">
+                        <h1 style="text-align: center; color:lightskyblue;">Your Suggestion Matters!</h1>
+                        <form action="/action_page.php" class="was-validated">
+                            <div class="form-group">
+                             
+                            <div class="form-group">
+                              <label for="pwd">Provide Your Suggestion:</label>
+                              <textarea class="form-control" rows="5" id="comment" ></textarea>
+                              
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group form-check">
+                              <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" required> I agree to the terms and conditions.
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">Submit</button>
+                          </form> 
+                    </div>
                 </div>
-                <div class="form-group form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Remember me
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-outline-primary">Submit</button>
-              </form>
-          </div>    
-      </div>
-<div class="row">
-    <div class="column5">
-        <blockquote class="twitter-tweet" data-width="550"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-       </div>
-       <div class="column6">
-        <a class="twitter-timeline" data-width="550" data-height="480" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-       </div>
-</div>
-
-    </body>
+              </div>
+            </div>
+          </div>
+   
+  
+    
+</body>
 </html>
