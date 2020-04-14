@@ -1,0 +1,206 @@
+
+body, html{
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+  body{
+    /* The image used */
+    background-image: url("bg.jpg");
+  
+    /* Full height */
+  
+  
+    /* Center and scale the image nicely */
+    
+    background-repeat: no-repeat;
+  background-size: cover;
+  }
+  /*preloader*/
+  #loader-wrapper {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:1000;
+    }
+    #loader {
+      display:block;
+      position: relative;
+      top:50%;
+      left:50%;
+      width:150px;
+      height:150px;
+      margin:-75px 0 0 -75px;
+      border:3px solid transparent;
+      border-top-color:white;
+      border-radius:100%;
+      -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+      z-index:1001;
+    }
+    #loader:before {
+      content:"";
+      position: absolute;
+      top:5px;
+      left:5px;
+      right:5px;
+      bottom:5px;
+      border:3px solid transparent;
+      border-top-color: blue;
+      border-radius:100%;
+      -webkit-animation: spin 3s linear infinite;
+              animation: spin 3s linear infinite;
+    }
+    #loader:after {
+      content:"";
+      position: absolute;
+      top:12px;
+      left:12px;
+      right:12px;
+      bottom:12px;
+      border:3px solid transparent;
+      border-top-color:lightskyblue;
+      border-radius:100%;
+      -webkit-animation: spin 2.5s linear infinite;
+              animation: spin 2.5s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0%   { 
+        -webkit-transform: rotate(0deg); 
+          -ms-transform: rotate(0deg); 
+              transform: rotate(0deg);
+      }
+      100% { 
+        -webkit-transform: rotate(360deg); 
+          -ms-transform: rotate(360deg); 
+              transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      0%   { 
+        -webkit-transform: rotate(0deg); 
+          -ms-transform: rotate(0deg); 
+              transform: rotate(0deg);
+      }
+      100% { 
+        -webkit-transform: rotate(360deg); 
+          -ms-transform: rotate(360deg); 
+              transform: rotate(360deg);
+      }
+    }
+    
+    #loader-wrapper .loader-section {
+      position:fixed;
+      top:0;
+      background:white;
+      width:51%;
+      height:100%;
+      z-index:1000;
+    }
+    
+    #loader-wrapper .loader-section.section-left {
+      left:0
+    }
+    #loader-wrapper .loader-section.section-right {
+      right:0;
+    }
+    
+    /* Loaded Styles */
+    .loaded #loader-wrapper .loader-section.section-left {
+      transform: translateX(-100%);
+      transition: all 1s 0.4s cubic-bezier(0.645,0.045,0.355,1.000);
+    }
+    .loaded #loader-wrapper .loader-section.section-right {
+      transform: translateX(100%);
+      transition: all 1s 0.4s cubic-bezier(0.645,0.045,0.355,1.000);
+    }
+    .loaded #loader {
+      opacity: 0;
+      transition: all 1s ease-out;
+    }
+    .loaded #loader-wrapper {
+      visibility: hidden;
+      transform:translateY(-100%);
+      transition: all 1s 1s ease-out;
+    }
+  /*----------------------------------*/
+  .navbar-title{
+    color: white;
+  }
+  .navbar .navbar-title{
+      float: none;
+  
+  }
+  
+  .column1{
+   margin: 0 auto;
+    padding-top: 30px;
+ 
+  }
+  .column2{
+ margin: 0 auto;
+    padding-top: 30px;
+  }
+  .column3{
+      margin: 0 auto;
+      padding-top: 30px;
+
+    }
+ .column4{
+     margin: 0 auto;
+ }
+
+form{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.column5{
+    padding-top: 10px;
+    margin: 0 auto;
+  
+}
+.column6{
+    padding-top: 10px;
+    margin:0 auto;
+}
+  /*scroll down button*/
+  #button-scroll{
+    display: inline-block;
+    background-color:lightskyblue;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    opacity: 0.7;
+    padding-bottom: 20px;
+  }
+
+  #button-scroll::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: lightblue;
+ 
+  }
+  #button-scroll:hover {
+    cursor: pointer;
+    background-color:darkblue;
+   
+  }
+  #button-scroll:active {
+    background-color: lightblue;
+  }
+  #button-scroll.show {
+    opacity: 1;
+    visibility: visible;
+  }
